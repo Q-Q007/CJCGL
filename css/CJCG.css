@@ -1,12 +1,22 @@
 @font-face {
-  font-family: font;
-  src: url(../fonts/Crimson\ Text\ Roman.ttf);
+  font-family: 'crimson';
+  src: url(../fonts/Crimson\ Text\ Roman.ttf)format(truetype);
   
 }
 
 @font-face {
-  font-family: font2;
-  src: url(../fonts/MyriadPro-Regular.otf);
+  font-family: 'myriadpro';
+  src: url(../fonts/MyriadPro-Regular.otf)format(opentype);
+}
+
+@font-face {
+  font-family: 'fontquan';
+  src: url(../fonts/Fontquan-XinYiGuanHeiTi\ Regular.ttf)format(truetype);
+}
+
+@font-face {
+  font-family: 'youshen';
+  src: url(../fonts/YouSheBiaoTiHei\ Regular.ttf)format(truetype);
 }
 
 :root {
@@ -22,11 +32,10 @@
 --link-color:           #404040;
 --p-color:              #666262; */
 
-/* --base-font-family:     'font2', sans-serif;
---title-font-family:    'font1', sans-serif;
---font-bold-family:     'font1', sans-serif;
---font-medium-family:   'font1', sans-serif;
---font-weight-bold:     bold;   */
+--base-font-family:     'crimson', sans-serif;
+--title-font-family:    'myriadpro', sans-serif;
+--font-bold-family:     'fontquan', sans-serif;
+--font-medium-family:   'youshen', sans-serif;
 
 /* --h1-font-size:         42px;
 --h2-font-size:         32px;
@@ -39,56 +48,12 @@
 --border-radius-small:  5px;
 }
 
-/* body {
+body {
 background: var(--white-color);
 font-family: var(--base-font-family);
-} */
-
-
-/*---------------------------------------
- TYPOGRAPHY              
------------------------------------------*/
-
-h1,h2,h3,h4,h5,h6 {
-font-family: var(--title-font-family);
-line-height: inherit;
 }
 
-h1 {
-color: var(--title-color);
-font-size: var(--h1-font-size);
-}
 
-h2 {
-font-size: var(--h2-font-size);
-font-weight: 100;
-}
-
-h3 {
-font-size: var(--h3-font-size);
-font-weight: 100;
-margin-bottom: 0;
-}
-
-h4 {
-color: var(--gray-color);
-font-family: var(--base-font-family);
-font-size: var(--p-font-size);
-letter-spacing: 1px;
-text-transform: uppercase;
-}
-
-p {
-color: var(--p-color);
-font-size: var(--p-font-size);
-line-height: 1.5em;
-}
-
-b, 
-strong {
-letter-spacing: 0;
-color: var(--secondary-color);
-}
   
   /*---------------------------------------
      First Page            
@@ -137,16 +102,17 @@ color: var(--secondary-color);
 .slogan{
   text-align: center;
   color: white;
-  font-size: large;
+  font-size: 15px;
   text-shadow: 1px 1px 3px #000000;
+  font-family: var(--base-font-family2);
 }
 
     /*---------------------------------------
      About              
   -----------------------------------------*/
   .about {
-    min-height: 100vh;
-    background-image: url("../images/about2.png");
+    min-height: 110vh;
+    background-image: url("../images/about3.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -166,7 +132,6 @@ color: var(--secondary-color);
     margin-right: auto;
   }
 
-
   .card{
     background-color:rgba(128, 128, 128, 0.31);
     margin-top: 4%;
@@ -177,26 +142,48 @@ color: var(--secondary-color);
     border: none;
     border-radius: 0%;
     padding: 10px;
+    text-align: center;
+  }
+
+  .txtAbout{
+    text-align: center;
+    width: 450px;
+  }
+
+  .imgAbout{
+    width:300px;
+    height: 150px;
+    background-color: #e2e3e1;
+    text-align: center;
+  }
+
+  .about-info{
+    font-size: 13px;
+    color: #517280;
+    width: fix-content;
+    padding-top: 20px;
+    font-family: var(--font-bold-family);
   }
 
   .cardTlt{   
     font-size: 40px;
     text-align: center;
     font-weight: bolder;
-    background-image: linear-gradient(45deg, #6b8996, #2c424c,#6b8996);
+    background-image: linear-gradient(45deg, #779fb1,#779fb1, #2c424c,#779fb1);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(1px 2px #3b2823);
+    filter: drop-shadow(2px 2px #3b2823);
+    font-family: var(--font-medium-family);
   }
 
 
   .cardTlt2{
     color: #a37a69;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-weight: bolder;
     padding-top: 0px;
@@ -208,9 +195,10 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(1px 1px #3b2823);
+    font-family: var(--font-medium-family);
   }
 
-  .card-body{
+  /* .card-body{
     margin-left: 25%;
     margin-right: 25%;
     font-size: 85%;
@@ -220,7 +208,7 @@ color: var(--secondary-color);
 
   .card-text{
     color: #517280;
-  }
+  } */
 
     /*---------------------------------------
      Team              
@@ -233,6 +221,10 @@ color: var(--secondary-color);
     background-repeat: no-repeat;
   }
 
+  
+  .imgTeam{
+    padding-top: 30px;
+  }
   
   .teamTlt{
     position: absolute;
@@ -249,7 +241,7 @@ color: var(--secondary-color);
     font-style: italic;
     padding-bottom: 0px;
     margin-bottom: 0;
-    background-image: linear-gradient(50deg, #ffffff, #a8a8a8,#ffffff, #a8a8a8);
+    background-image: linear-gradient(50deg, #ffffff, #ffffff, #343434);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -260,12 +252,10 @@ color: var(--secondary-color);
   }
 
   .teamTlt2{
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
-    font-weight: bolder;
-    font-style: italic;
     padding-top: 0px;
-    background-image: linear-gradient(50deg, #ffffff, #a8a8a8,#ffffff, #a8a8a8);
+    background-image: linear-gradient(50deg,#ffffff, #ffffff, #656363,#ffffff,#ffffff, #343434);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -273,6 +263,7 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(4px 4px 3px #4e2d25);
+    font-family: var(--font-medium-family);
   }
 
   .circle{
@@ -287,7 +278,7 @@ color: var(--secondary-color);
   }
 
   .teamMember{
-    padding-top: 250px;
+    padding-top: 260px;
   }
 
 
@@ -321,6 +312,7 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(4px 3px 0px #ffffff);
+    font-family: var(--title-font-family);
   }
 
   .MissionTlt2{
@@ -338,6 +330,7 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(4px 3px 0px #ffffff);
+    font-family: var(--title-font-family);
   } 
 
   .mission-info{
@@ -348,6 +341,7 @@ color: var(--secondary-color);
     background-repeat: no-repeat;
     padding-top: 10px;
     font-size: small;
+    font-family: var(--base-font-family);
   }
 
   .missionlogo{
@@ -422,38 +416,38 @@ color: var(--secondary-color);
 
  .solutionTlt1{
   color: #3b291f;
-  font-size: 35px;
+  font-size: 40px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 7px #3b291f;
   text-align: left;
   font-weight: bold;
-  font-style: italic;
+  font-family: var(--font-bold-family);
  }
  
  .solutionTlt2{
   color: #6d291f;
-  font-size: 35px;
+  font-size: 40px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 7px #3b291f;
   text-align: left;  
   font-weight: bold;
-  font-style: italic;
+  font-family: var(--font-bold-family);
  }
 
  .solutionTlt3{
   color: #517280;
-  font-size: 35px;
+  font-size: 40px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 10px #3b291f;
   text-align: right;  
   font-weight: bold;
-  font-style: italic;
+  font-family: var(--font-bold-family);
  }
 
  .solutionTlt4{
   color: #345572;
-  font-size: 35px;
+  font-size: 40px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 10px #3b291f;
   text-align: right;  
   font-weight: bold;
-  font-style: italic;
+  font-family: var(--font-bold-family);
  }
 
  .lineS1{
@@ -493,6 +487,7 @@ color: var(--secondary-color);
   font-family: Plain-Bold ;
   font-size: large;
   padding-top: 6px;
+  font-family: var(--font-medium-family);
 }
 
 .solution-wrapper2 {
@@ -534,13 +529,15 @@ color: var(--secondary-color);
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
     color: #ffffff;
-    font-size:45px;
+    font-size:50px;
+    font-family: var(--font-medium-family);
    }
 
    .lifelongTlt2{
     color: #ffffff;
     text-shadow: 0px 0px 4px #ffffff;
-    font-size:45px;
+    font-size:50px;
+    font-family: var(--font-medium-family);
    }
 
    .lifelongctx{
@@ -560,11 +557,13 @@ color: var(--secondary-color);
     margin-right: auto;
     text-align: center;
     font-size: small;
+    font-family: var(--font-bold-family);
   }
 
    .lifelong-info{
     text-align: center;
     margin-top: 30px;
+    font-family: var(--font-bold-family);
    }
 
    .lifelong-info2{
@@ -573,6 +572,7 @@ color: var(--secondary-color);
     padding-top: 45px;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: var(--font-bold-family);
    }
 
    .Lifelongclr1{
@@ -598,6 +598,7 @@ color: var(--secondary-color);
    .overseasTlt{
     text-align: center;
     padding-top: 30px;
+    font-family: var(--font-bold-family);
    }
 
    .overseaTlt1{
@@ -615,6 +616,7 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(0px 2px 2px #ffffff);
+    font-family: var(--font-bold-family);
    }
 
    .overseaTlt2{
@@ -659,6 +661,7 @@ color: var(--secondary-color);
     font-size: large;
     text-align: left;
     padding-top: 55px;
+    font-family: var(--font-bold-family);
    }
 
    .overTlt3{
@@ -667,6 +670,7 @@ color: var(--secondary-color);
     font-size: large;
     text-align: right;
     padding-top: 55px;
+    font-family: var(--font-bold-family);
    }
 
    .overTlt4{
@@ -674,7 +678,7 @@ color: var(--secondary-color);
     font-weight: bold;
     font-size: large;
     text-align: center;
-
+    font-family: var(--font-bold-family);
    }
 
    .overseaiconSty1{
@@ -730,6 +734,7 @@ color: var(--secondary-color);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
+    font-family: var(--font-bold-family);
   }
 
   .supportingTlt1{
@@ -830,6 +835,7 @@ color: var(--secondary-color);
     font-size: 13px;
     padding-top: 10px;
     margin-bottom: 20px;
+    font-family: var(--font-bold-family);
   }
 
   /*---------------------------------------
@@ -862,6 +868,7 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(0px 2px 4px #ffffff);
+    font-family: var(--font-bold-family);
   }
 
   .tknTlt2{
@@ -877,6 +884,7 @@ color: var(--secondary-color);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(0px 2px 4px #ffffff);
+    font-family: var(--font-bold-family);
   }
 
   .tknTlt3{
@@ -920,7 +928,8 @@ color: var(--secondary-color);
   .tokenTlt2{
     text-align: center;
     position: relative;
-    padding-top: 40px;
+    padding-top: 45px;
+    font-family: var(--font-medium-family);
   }
 
   .tknTlt4{
@@ -950,6 +959,7 @@ color: var(--secondary-color);
     font-size: small;
     padding-top: 10px;
     padding-bottom: 20px;
+    font-family: var(--font-bold-family);
   }
 
   /*---------------------------------------
@@ -966,13 +976,12 @@ color: var(--secondary-color);
   .equityTlt{
     text-align: center;
     padding-top: 20px;
+    font-family: var(--font-medium-family);
   }
 
   .equityTlt1{
     font-size: 35px;
     text-align: center;
-    font-weight: bolder;
-    font-style: italic;
     background-image: linear-gradient(45deg,#777777, #ffffff, #ffffff, #777777,#ffffff, #777777);
     background-size: 100%;
     background-repeat: repeat;
@@ -986,8 +995,6 @@ color: var(--secondary-color);
   .equityTlt2{
     font-size: 65px;
     text-align: center;
-    font-weight: bolder;
-    font-style: italic;
     background-image: linear-gradient(45deg,#ffffff, #ffffff,#777777, #ffffff, #ffffff,#ffffff, #777777);
     background-size: 100%;
     background-repeat: repeat;
@@ -1035,7 +1042,6 @@ color: var(--secondary-color);
     background-position: center center;
     background-repeat: no-repeat;
     font-size: small;
-    font-weight: bold;
     color: #000000;
     text-shadow: 1px 1px 5px white;
     text-align: center;
@@ -1044,6 +1050,7 @@ color: var(--secondary-color);
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0;
+    font-family: var(--font-bold-family);
   }
 
   .etyclr2{
@@ -1070,6 +1077,7 @@ color: var(--secondary-color);
     text-align: center;
     padding-top: 30px;
     padding-bottom: 35px;
+    font-family: var(--font-bold-family);
   }
 
   .rvTlt1{
@@ -1212,24 +1220,23 @@ color: var(--secondary-color);
     color: #b4804f;
     text-shadow: 2px 2px 0px #ffffff;
     font-size: 30px;
-    font-weight: bold;
+    font-family: var(--font-bold-family);
   }
 
   .excTlt2{
     color: #000000;
     text-shadow: 2px 2px 0px #ffffff;
     font-size: 55px;
-    font-style: italic;
-    font-weight: bold;
+    font-family: var(--font-medium-family);
   }
 
   .excTlt3{
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: transparent;
     color: #ffffff;
-    font-size: 55px;
-    font-style: italic;
+    font-size: 50px;
     text-shadow: 1px 3px 3px #ffffff;
+    font-style: italic;
   }
 
   .exchange-info{
@@ -1240,6 +1247,7 @@ color: var(--secondary-color);
     padding: 10px;
     margin-right: 0;
     margin-bottom: 10px;
+    font-family: var(--font-bold-family);
   }
 
   .imgMap{
@@ -1251,11 +1259,12 @@ color: var(--secondary-color);
   .countries{
     font-size: x-large;
     color: #37241B;
-    font-weight: bold;
+    font-family: var(--font-bold-family);
   }
 
   ul.ctyList{
     list-style-type: none;
+    font-weight: bold;
   }
 
   .exchange-info2{
@@ -1288,6 +1297,7 @@ color: var(--secondary-color);
     text-align: center;
     font-size: large;
     letter-spacing: 2px;
+    font-family: var(--title-font-family);
   }
 
   .footerSty2{
@@ -1410,6 +1420,21 @@ color: var(--secondary-color);
       font-size: 80px;
     }
 
+    .solutionTlt1{
+      font-size: 35px;
+     }
+
+     .solutionTlt2{
+      font-size: 35px;
+     }
+
+     .solutionTlt3{
+      font-size: 35px;
+     }
+    .solutionTlt4{
+      font-size: 35px;
+     }
+
     .lineS1{
       margin-top: 30px;
       border: 1px solid #3b291f;
@@ -1486,10 +1511,8 @@ color: var(--secondary-color);
     }
 
     .imgTkn{
-      width: 250px;
-      height: 110px;
-      padding-top: 20px;
-      padding-bottom: 15px;
+      width: 450px;
+      height: 200px;
     }
 
     .imgMap{
