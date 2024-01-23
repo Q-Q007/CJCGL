@@ -1,0 +1,1514 @@
+@font-face {
+  font-family: font;
+  src: url(../fonts/Crimson\ Text\ Roman.ttf);
+  
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+:root {
+/* --primary-color:        #057a8d;
+--secondary-color:      #f1c111;
+--white-color:          #ffffff;
+--dark-color:           #171819;
+--project-bg:           #f0f8ff;
+--menu-bg:              #0c8195;
+
+--title-color:          #15141a;
+--gray-color:           #909090;
+--link-color:           #404040;
+--p-color:              #666262; */
+
+/* --base-font-family:     'font2', sans-serif;
+--title-font-family:    'font1', sans-serif;
+--font-bold-family:     'font1', sans-serif;
+--font-medium-family:   'font1', sans-serif;
+--font-weight-bold:     bold;   */
+
+/* --h1-font-size:         42px;
+--h2-font-size:         32px;
+--h3-font-size:         24px;
+--p-font-size:          18px;
+--base-font-size:       16px;
+--menu-font-size:       14px;  */
+
+ --border-radius-large:  100px;
+--border-radius-small:  5px;
+}
+
+/* body {
+background: var(--white-color);
+font-family: var(--base-font-family);
+} */
+
+
+/*---------------------------------------
+ TYPOGRAPHY              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+font-family: var(--title-font-family);
+line-height: inherit;
+}
+
+h1 {
+color: var(--title-color);
+font-size: var(--h1-font-size);
+}
+
+h2 {
+font-size: var(--h2-font-size);
+font-weight: 100;
+}
+
+h3 {
+font-size: var(--h3-font-size);
+font-weight: 100;
+margin-bottom: 0;
+}
+
+h4 {
+color: var(--gray-color);
+font-family: var(--base-font-family);
+font-size: var(--p-font-size);
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+p {
+color: var(--p-color);
+font-size: var(--p-font-size);
+line-height: 1.5em;
+}
+
+b, 
+strong {
+letter-spacing: 0;
+color: var(--secondary-color);
+}
+  
+  /*---------------------------------------
+     First Page            
+  -----------------------------------------*/
+
+.first {
+    min-height: 100vh;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+.first-logo{
+    position: relative;
+  
+}
+
+.center{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero-text {
+  bottom: 2em;
+  line-height: 800px;
+  text-align: center;
+
+  }
+
+.hero-text p{
+  line-height: 100px;
+  text-align:center;
+  color: white;
+  text-shadow: 2cm;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slogan{
+  text-align: center;
+  color: white;
+  font-size: large;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+    /*---------------------------------------
+     About              
+  -----------------------------------------*/
+  .about {
+    min-height: 100vh;
+    background-image: url("../images/about2.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .about {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-bglogo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .card{
+    background-color:rgba(128, 128, 128, 0.31);
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    max-height: 60%;
+    border: none;
+    border-radius: 0%;
+    padding: 10px;
+  }
+
+  .cardTlt{   
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    background-image: linear-gradient(45deg, #6b8996, #2c424c,#6b8996);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(1px 2px #3b2823);
+  }
+
+
+  .cardTlt2{
+    color: #a37a69;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 0px;
+    background-image: linear-gradient(45deg, #a37a69, #5f3b2f,#a37a69);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px #3b2823);
+  }
+
+  .card-body{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 85%;
+    text-align: center;
+    font-family: font2;
+  }
+
+  .card-text{
+    color: #517280;
+  }
+
+    /*---------------------------------------
+     Team              
+  -----------------------------------------*/
+  .team{
+    min-height: 100vh;
+    background-image: url("../images/bgteam.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  
+  .teamTlt{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  .teamTlt1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    background-image: linear-gradient(50deg, #ffffff, #a8a8a8,#ffffff, #a8a8a8);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(4px 4px 3px #4e2d25);
+  }
+
+  .teamTlt2{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 0px;
+    background-image: linear-gradient(50deg, #ffffff, #a8a8a8,#ffffff, #a8a8a8);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(4px 4px 3px #4e2d25);
+  }
+
+  .circle{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background: #C5B7B2;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .teamMember{
+    padding-top: 250px;
+  }
+
+
+  /*---------------------------------------
+     Mission
+  -----------------------------------------*/
+  .mission{
+    min-height: 100vh;
+    background-image: url("../images/bgmission.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .Mission{
+    text-align: center;
+    height: 150px;
+  }
+
+  .MissionTlt1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    background-image: linear-gradient(50deg, #7e6251, #3c2c22,#7e6251, #3c2c22);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(4px 3px 0px #ffffff);
+  }
+
+  .MissionTlt2{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    background-image: linear-gradient(50deg, #698794, #202e34,#698794, #202e34,#698794);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(4px 3px 0px #ffffff);
+  } 
+
+  .mission-info{
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/kiteShape.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    font-size: small;
+  }
+
+  .missionlogo{
+    width: 150px;
+  }
+
+  .ct{
+    position: absolute;
+    color: #3B291F;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px white;
+    font-size: large;
+  }
+
+  .container5{
+    width: 410px;
+    position: absolute;
+    top:auto;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    margin-top: 300px;
+    padding-top:0px ;
+  }
+
+  .mission-info2{
+    text-align: left;
+    font-size: small;
+    background-color: #3b291fcb;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+    height: 130px;
+  }
+
+  .txtMission{
+    color: white;
+    padding: 10px;
+  }
+
+  #i1{
+    float: right;    
+    margin: 5px 0 5px 0;
+  }
+
+  .mission-info3{
+    text-align: right;
+    font-size: small;
+    background-color: #517280b6;
+    margin-top: 15px;
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
+    height: 130px;
+  }
+
+  #i2{
+    float: left;    
+    margin: 18px 0px 15px 15px;
+  }
+
+  /*---------------------------------------
+     SOLUTION             
+  -----------------------------------------*/
+ .solution{
+  min-height: 100vh;
+  background-image: url("../images/bgsolution.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+ }
+ 
+ .solutionTlt{
+  padding-top: 40px;
+ } 
+
+ .solutionTlt1{
+  color: #3b291f;
+  font-size: 35px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 5px 7px #3b291f;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+ }
+ 
+ .solutionTlt2{
+  color: #6d291f;
+  font-size: 35px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 5px 7px #3b291f;
+  text-align: left;  
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ .solutionTlt3{
+  color: #517280;
+  font-size: 35px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 5px 10px #3b291f;
+  text-align: right;  
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ .solutionTlt4{
+  color: #345572;
+  font-size: 35px;
+  text-shadow: 2px 2px 0px #ffffff, 5px 5px 10px #3b291f;
+  text-align: right;  
+  font-weight: bold;
+  font-style: italic;
+ }
+
+ .lineS1{
+  margin-top: 30px;
+  border: 1px solid #3b291f;
+  width: 250px;
+ }
+
+ .lineS2{
+  margin-top: 30px;
+  border: 1px solid #71746b;
+  max-width: 300px ;
+ }
+
+
+ .solution-wrapper {
+  position: relative;
+  background-color: #597980dd;
+  text-align: center;
+  border-radius: 6%;
+  width: 50px;
+  height: 110px;
+  padding: 2px;
+  margin: auto;
+  min-height:45px;
+  min-width: 110px;
+  line-height: 0.8;
+  margin-top: 15px;
+}
+
+.solution-wrapper img {
+  padding-top:15%;
+}
+
+.solution-info {
+  color: #ffffff;
+  font-family: Plain-Bold ;
+  font-size: large;
+  padding-top: 6px;
+}
+
+.solution-wrapper2 {
+  position: relative;
+  background-color: #80604bdc;
+  text-align: center;
+  border-radius: 6%;
+  width: 50px;
+  height: 110px;
+  padding: 2px;
+  margin: auto;
+  min-height:45px;
+  min-width: 110px;
+  line-height: 0.8;
+  margin-top: 15px;
+}
+
+.solution-wrapper2 img {
+  padding-top:15%;
+}
+
+  /*---------------------------------------
+     LIFELONG              
+  -----------------------------------------*/
+  .lifelong{
+    min-height: 100vh;
+    background-image: url("../images/bglifelong.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+   }
+
+   .lifelongTlt{
+    text-align: center;
+    padding: 25px;
+   }
+
+   .lifelongTlt1{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    font-size:45px;
+   }
+
+   .lifelongTlt2{
+    color: #ffffff;
+    text-shadow: 0px 0px 4px #ffffff;
+    font-size:45px;
+   }
+
+   .lifelongctx{
+    width: 460px;
+    padding: 20px;
+   }
+
+   .circle2{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px 10px #bebfbcb0, 0px 0px 0px 13px whitesmoke, 0px 0px 0px 20px #d7d8d6;
+    margin: 25px;
+    padding-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: small;
+  }
+
+   .lifelong-info{
+    text-align: center;
+    margin-top: 30px;
+   }
+
+   .lifelong-info2{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+
+   .Lifelongclr1{
+    color: white;
+    font-style: italic;
+   }
+
+   .Lifelongclr2{
+    color: #F5C0A7;
+    font-style: italic;
+   }
+
+  /*---------------------------------------
+     OVERSEAS           
+  -----------------------------------------*/
+  .overseas{
+    min-height: 100vh;
+    background-image: url("../images/bgoverseas.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+   .overseasTlt{
+    text-align: center;
+    padding-top: 30px;
+   }
+
+   .overseaTlt1{
+    font-size: 55px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    background-image: linear-gradient(50deg, #ad604b, #64372b,#ad604b, #64372b);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 2px #ffffff);
+   }
+
+   .overseaTlt2{
+    font-size: 55px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    background-image: linear-gradient(50deg, #597980, #2d3d40,#597980, #2d3d40);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 2px #ffffff);
+   }
+
+   .overseaTlt3{
+    color: #284a5b;
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+   }
+
+   .container7{
+    width: 400px;
+    margin: auto;
+   }
+
+   .overseasicon{
+    text-align: center;
+    top: 95px;
+    padding-bottom: 0px;
+   }
+
+   .overTlt2{
+    color: #3C261B;
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+    padding-top: 55px;
+   }
+
+   .overTlt3{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    text-align: right;
+    padding-top: 55px;
+   }
+
+   .overTlt4{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+
+   }
+
+   .overseaiconSty1{
+    position: absolute;
+    left: 20%;
+   }
+
+   .overseaiconSty2{
+    position: absolute;
+    right: 25%;
+   }
+
+   .overSty1{
+    text-align: left;
+    font-size: x-small;
+    color: #3C261B;
+   }
+
+   .overSty2{
+    text-align: right;
+    font-size: x-small;
+    color: white;
+   }
+
+   .overSty3{
+    text-align: center;
+    font-size: x-small;
+    color: white;
+   }
+
+   .overic{
+    padding-bottom: 200px;
+    position: absolute;
+    
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+   }
+
+  /*---------------------------------------
+     SUPPORTING           
+  -----------------------------------------*/
+  .supporting{
+    min-height: 100vh;
+    background-image: url("../images/bgsupporting.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .supportingTlt{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .supportingTlt1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    background-image: linear-gradient(45deg, #ffffff, #acafb0,#ffffff, #acafb0);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #000000);
+  }
+
+  .supportingTlt2{
+    font-size: 65px;
+    text-align: center;
+    font-weight: bolder;
+    background-image: linear-gradient(45deg, #ffffff, #acafb0,#ffffff, #acafb0);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 5px #000000);
+  }
+  
+  .imgSpt{
+    min-width:300px;
+    min-height: 150px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+  }
+
+  .support-info{
+    text-align: center center;
+  }
+
+  .support-info1{
+    border: 1px solid #958176;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #b0bbc69c;
+    width: fit-content;
+    padding: 10px;
+    color: #80604b;
+    font-size: 18px;
+    min-width: 250px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px white;
+    margin-top: 0px;
+  }
+
+  .support-info2{
+    color: white;
+    text-shadow: black;
+    text-align: center;
+    background-color: #b0bbc69c;
+    width: fit-content;
+    min-width: 400px;
+    text-shadow: 4px 4px 5px #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .sptclr{
+    color: #FFDCB3;
+  }
+
+  .imgSpt2{
+    text-align: center;
+  }
+
+  .support-info3{
+    color: #80604B;
+    font-size: small;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .cardSpt{
+    border: none;
+    width: auto;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .card-bodySpt{
+    text-align: center;
+    color: #80604B;
+    font-size: 13px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  /*---------------------------------------
+     TOKEN             
+  -----------------------------------------*/
+  .tokenization{
+    min-height: 100vh;
+    background-image: url("../images/bgtokenization.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .tokenTlt{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .tknTlt1{
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(45deg, #a37a5f, #775945,#a37a5f, #775945);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #ffffff);
+  }
+
+  .tknTlt2{
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(45deg, #bf755b, #9a4a3a,#bf755b, #9a4a3a);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #ffffff);
+  }
+
+  .tknTlt3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(45deg, #a37a5f, #775945,#a37a5f, #775945);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #ffffff);
+  }
+
+  .imgTkn{
+      width: 250px;
+      height: 110px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+  }
+
+  .ctxTkn{
+    color: #597980;
+    text-align: center;
+    font-family: var(--font-medium-family);
+    font-size: 19px;
+  }
+
+  .ctxTkn2{
+    color: #3B291F;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 110px;
+  }
+
+  .tokenTlt2{
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+  }
+
+  .tknTlt4{
+    color: #ffffff;
+    font-size: 30px;
+    font-style: italic;
+  }
+
+  .tknTlt5{
+    color: #9cb7ba;
+    font-size: 30px;
+    font-style: italic;
+  }
+
+  .cardToken{
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .cardTkn{
+    text-align: center;
+  }
+
+  .card-bodyTkn{
+    color: #C0B4A1;
+    text-align: center;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  /*---------------------------------------
+     EQUITY           
+  -----------------------------------------*/
+  .equity{
+    min-height: 100vh;
+    background-image: url("../images/bgequity.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .equityTlt{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .equityTlt1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(45deg,#777777, #ffffff, #ffffff, #777777,#ffffff, #777777);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #000000);
+  }
+
+  .equityTlt2{
+    font-size: 65px;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(45deg,#ffffff, #ffffff,#777777, #ffffff, #ffffff,#ffffff, #777777);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px #000000);
+  }
+
+  .equityCtx{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .imgEquity2{
+    width: 350px;
+    height: 250px;
+  }
+
+  .equity-info{
+    color: #ffffff;
+    font-size: small;
+    text-align: center;
+  }
+
+  .etyclr{
+    color: #FFDCB3;
+  }
+
+  .imgline{
+    text-align: center;
+  }
+
+  .Success{
+    color: #EBCD80;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .equity-info2{
+    background-image: url("../images/txtEquityctx2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: small;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 1px 1px 5px white;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+
+  .etyclr2{
+    color: #5E0000;
+  }
+
+
+  /*---------------------------------------
+     REVOLUTION              
+  -----------------------------------------*/
+  .revolution{
+    min-height: 100vh;
+    background-image: url("../images/bgrevolution.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .revolutionTlt{
+    text-align: center;
+  }
+
+  .revolutionTlt{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .rvTlt1{
+    color: #713c31;
+    text-shadow: 1px 3px 3px #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .rvTlt2{
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 1px 3px 3px #ffffff;
+  }
+
+  .rvTlt3{
+    color: #597980;
+    text-shadow: 1px 3px 3px #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .container2{
+    position: absolute;
+    top:auto;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    margin-top: 110px;
+
+    width: 400px;
+    height: auto;
+    border: 4px solid rgba(255, 255, 255, 0.455);
+    padding-left: 2px;
+    border-radius: 30px;
+    background-color: #e7e4e447;
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+
+  .rvStyle{
+    border-right: 1px solid #314355;
+  }
+
+  .rvSty{
+    text-align: right;
+    font-size: 35px;
+    color: #314355;
+    text-shadow: 0px 0px 7px white;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+
+  .rvSty1{
+    text-align: right;
+    font-size: 35px;
+    color: #314355;
+    text-shadow: 0px 0px 7px white;
+    font-weight: bold;
+  }
+
+  .rvSty2{
+    color: #314355;
+    text-shadow: 0px 0px 7px white;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .rvSty3{
+    text-align: center;
+    color: #314355;
+    text-shadow: 0px 0px 7px white;
+    font-size: x-small;
+    font-style: italic;
+  }
+
+
+  .container3{
+    width: 350px;
+    height: auto;
+    border: 4px solid rgba(255, 255, 255, 0.455);
+    padding-left: 2px;
+    border-radius: 30px;
+    background-color: #e7e4e447;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top:auto;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    margin-top: 350px;
+  }
+
+  .rvSty5{
+    color: #671a0d;
+    font-size: x-large;
+    text-shadow: 0px 0px 7px white;
+  }
+
+  .rvSty6{
+    border: 1px solid #49170E;
+  }
+
+  .rvSty7{
+    color: #49170E;
+    font-size: medium;
+    text-shadow: 0px 0px 7px white;
+  }
+
+  .rvSty8{
+    text-align: center;
+    color: #49170E;
+    text-shadow: 0px 0px 7px white;
+    font-size: x-small;
+    font-style: italic;
+  }
+
+  /*---------------------------------------
+     Exchange              
+  -----------------------------------------*/
+  .exchange{
+    min-height: 100vh;
+    background-image: url("../images/bgexchange.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .exchangeTlt{
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  .excTlt1{
+    color: #b4804f;
+    text-shadow: 2px 2px 0px #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .excTlt2{
+    color: #000000;
+    text-shadow: 2px 2px 0px #ffffff;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .excTlt3{
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+    font-size: 55px;
+    font-style: italic;
+    text-shadow: 1px 3px 3px #ffffff;
+  }
+
+  .exchange-info{
+    text-align: right;
+    background-color: #597980;
+    color: #ffffff;
+    width: max-content;
+    padding: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .imgMap{
+    width: 180px;
+    height: 110px;
+    text-align: right;
+  }
+
+  .countries{
+    font-size: x-large;
+    color: #37241B;
+    font-weight: bold;
+  }
+
+  ul.ctyList{
+    list-style-type: none;
+  }
+
+  .exchange-info2{
+    text-align: left;
+    font-size: small;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+
+  .container4{
+    width: 440px;
+    position: absolute;
+    top:auto;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    margin-top: 250px;
+    
+  }
+
+  /*---------------------------------------
+     footer            
+  -----------------------------------------*/
+  .site-footer{
+    background-color: #363633;
+    padding: 30px;
+  }
+
+  .footerSty{
+    color: #808080;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 2px;
+  }
+
+  .footerSty2{
+    color: #808080;
+    text-align: center;
+    font-size: 5px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+  }
+  
+  /*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+  @media screen and (min-width: 1200px) {
+
+    .about-info h2 {
+      max-width: 70%;
+    }
+
+    .card-body{
+      font-size: 85%;
+    }
+
+    .container{
+      width: 600px;
+      padding-bottom: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 991px) {
+
+  .card-body{
+    font-size: 82%;
+  }
+
+    .project h2 {
+      max-width: 32%;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+
+    .card-body{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 80%;
+    }
+
+    .hero {
+      padding-top: 14em;
+    }
+
+    .hero-text {
+      bottom: 2em;
+    }
+
+    .navbar {
+      padding: 1em;
+    }
+
+    .navbar-collapse {
+      text-align: center;
+      padding: 2.5em 0;
+    }
+
+    .nav-link {
+      display: inline-block;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link.contact {
+      margin: 1em 0;
+    }
+
+    .copyright-text, 
+    .footer-link, 
+    .site-footer .social-icon {
+      margin-top: 3em;
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+
+ 
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .slogan{
+      font-size: 8px;
+    }
+
+    .teamTlt2{
+      font-size: 52px;
+    }
+
+    .teamMember{
+      padding-top: 200px;
+    }
+
+    .MissionTlt1{
+      font-size: 60px;
+    }
+
+    .MissionTlt2{
+      font-size: 80px;
+    }
+
+    .lineS1{
+      margin-top: 30px;
+      border: 1px solid #3b291f;
+      width: 210px ;
+     }
+    
+     .lineS2{
+      margin-top: 30px;
+      border: 1px solid #71746b;
+      max-width: 300px ;
+     }
+
+     .lifelongTlt1{
+      font-size:40px;
+     }
+  
+     .lifelongTlt2{
+      font-size:40px;
+     }
+
+    .overseasTlt{
+      width: auto;
+      height: auto;
+      background-position: center center;
+    }
+
+    .imgSpt{
+      width:100px;
+      height: 100px;
+      margin-top: 15px;
+    }
+
+
+    .support-info1{
+      border: 1px solid #958176;
+      text-align: center;
+      border-radius: 4px;
+      background-color: #b0bbc69c;
+      width: fit-content;
+      padding: 10px;
+      color: #80604b;
+      font-size: 12px;
+      width: 250px;
+      text-shadow: 1px 1px 5px white;
+    }
+
+    .support-info2{
+      font-size: small;
+    }
+    
+    .support-info3{
+      color: #80604B;
+      font-size: small;
+      padding-top: 10px;
+      text-align: center;
+      font-weight: bold;
+      width: auto;
+      height: auto;
+      padding-top: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .card-body{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-size: 80%;
+    }
+
+    .ll7{
+      width:165px;
+      height: 160px;
+      padding: 0px;
+    }
+
+    .imgTkn{
+      width: 250px;
+      height: 110px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+
+    .imgMap{
+      text-align: right;
+      margin-left: 20px;
+      width: 200px;
+      height: 140px;
+    }
+
+    .footer-link, 
+    .site-footer .social-icon {
+      margin-top: 1em;
+    }
+
+    .copyright-text {
+      margin: 2.5em 0 1em 0;
+    }
+
+    .footer-link li {
+      margin-left: 0;
+    }
+  }
