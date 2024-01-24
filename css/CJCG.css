@@ -19,32 +19,20 @@
   src: url(../fonts/YouSheBiaoTiHei\ Regular.ttf)format(truetype);
 }
 
-:root {
-/* --primary-color:        #057a8d;
---secondary-color:      #f1c111;
---white-color:          #ffffff;
---dark-color:           #171819;
---project-bg:           #f0f8ff;
---menu-bg:              #0c8195;
+@font-face {
+  font-family: 'sucai';
+  src: url(../fonts/sucaijishikufangti\ Regular.ttf)format(truetype);
+}
 
---title-color:          #15141a;
---gray-color:           #909090;
---link-color:           #404040;
---p-color:              #666262; */
+:root {
 
 --base-font-family:     'crimson', sans-serif;
 --title-font-family:    'myriadpro', sans-serif;
---font-bold-family:     'fontquan', sans-serif;
---font-medium-family:   'youshen', sans-serif;
+--font-medium-family:     'fontquan', sans-serif;
+--font-bold-family:   'youshen', sans-serif;
+--base-font-family2:   'sucai', sans-serif;
 
-/* --h1-font-size:         42px;
---h2-font-size:         32px;
---h3-font-size:         24px;
---p-font-size:          18px;
---base-font-size:       16px;
---menu-font-size:       14px;  */
-
- --border-radius-large:  100px;
+--border-radius-large:  100px;
 --border-radius-small:  5px;
 }
 
@@ -102,9 +90,10 @@ font-family: var(--base-font-family);
 .slogan{
   text-align: center;
   color: white;
-  font-size: 15px;
-  text-shadow: 1px 1px 3px #000000;
-  font-family: var(--base-font-family);
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 5px #000000;
+  font-family: var(--base-font-family2);
 }
 
     /*---------------------------------------
@@ -158,17 +147,17 @@ font-family: var(--base-font-family);
   }
 
   .about-info{
-    font-size: 13px;
+    font-size: 15px;
     color: #517280;
     width: fix-content;
     padding-top: 20px;
-    font-family: var(--font-bold-family);
+    font-family: var(--base-font-family2);
   }
 
   .cardTlt{   
     font-size: 40px;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 1500px;
     background-image: linear-gradient(45deg, #779fb1,#779fb1, #2c424c,#779fb1);
     background-size: 100%;
     background-repeat: repeat;
@@ -177,7 +166,7 @@ font-family: var(--base-font-family);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(2px 2px #3b2823);
-    font-family: var(--font-medium-family);
+    font-family: var(--font-bold-family);
   }
 
 
@@ -187,15 +176,15 @@ font-family: var(--base-font-family);
     text-align: center;
     font-weight: bolder;
     padding-top: 0px;
-    background-image: linear-gradient(45deg, #a37a69, #5f3b2f,#a37a69);
+    background-image: linear-gradient(45deg,#a88271, #a88271, #5f3b2f,#a88271,#a88271, #5f3b2f,#a88271, #5f3b2f);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(1px 1px #3b2823);
-    font-family: var(--font-medium-family);
+    filter: drop-shadow(2px 2px #4c362e);
+    font-family: var(--base-font-family2);
   }
 
   /* .card-body{
@@ -227,10 +216,6 @@ font-family: var(--base-font-family);
   }
   
   .teamTlt{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 20%;
     text-align: center;
   }
 
@@ -254,7 +239,6 @@ font-family: var(--base-font-family);
   .teamTlt2{
     font-size: 70px;
     text-align: center;
-    padding-top: 0px;
     background-image: linear-gradient(50deg,#ffffff, #ffffff, #656363,#ffffff,#ffffff, #343434);
     background-size: 100%;
     background-repeat: repeat;
@@ -262,8 +246,12 @@ font-family: var(--base-font-family);
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(4px 4px 3px #4e2d25);
-    font-family: var(--font-medium-family);
+    filter: drop-shadow(4px 4px 2px #4e2d25);
+    font-family: var(--font-bold-family);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,50%);
   }
 
   .circle{
@@ -278,7 +266,7 @@ font-family: var(--base-font-family);
   }
 
   .teamMember{
-    padding-top: 260px;
+    padding-top: 200px;
   }
 
 
@@ -312,13 +300,12 @@ font-family: var(--base-font-family);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(4px 3px 0px #ffffff);
-    font-family: var(--title-font-family);
+    font-family: var(--base-font-family2);
   }
 
   .MissionTlt2{
     font-size: 80px;
     text-align: center;
-    font-weight: bolder;
     font-style: italic;
     padding-bottom: 0px;
     margin-bottom: 0;
@@ -330,7 +317,7 @@ font-family: var(--base-font-family);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(4px 3px 0px #ffffff);
-    font-family: var(--title-font-family);
+    font-family: var(--font-bold-family);
   } 
 
   .mission-info{
@@ -341,7 +328,7 @@ font-family: var(--base-font-family);
     background-repeat: no-repeat;
     padding-top: 10px;
     font-size: small;
-    font-family: var(--base-font-family);
+    font-family: var(--base-font-family2);
   }
 
   .missionlogo{
@@ -364,25 +351,26 @@ font-family: var(--base-font-family);
     left: 50%;
     transform:translate(-50%, -50%) ;
     margin-top: 300px;
-    padding-top:0px ;
+    padding-top:10px ;
   }
 
   .mission-info2{
     text-align: left;
     font-size: small;
     background-color: #3b291fcb;
-    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
-    height: 130px;
+    clip-path: polygon(0 0, 98% 0, 90% 100%, 0% 100%);
+    height: 120px;
   }
 
   .txtMission{
     color: white;
-    padding: 10px;
+    padding: 12px;
+    font-size: 12px;
   }
 
   #i1{
     float: right;    
-    margin: 5px 0 5px 0;
+    margin: 0px 0 10x 10px;
   }
 
   .mission-info3{
@@ -390,13 +378,13 @@ font-family: var(--base-font-family);
     font-size: small;
     background-color: #517280b6;
     margin-top: 15px;
-    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
-    height: 130px;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    height: 120px;
   }
 
   #i2{
     float: left;    
-    margin: 18px 0px 15px 15px;
+    margin: 0px 0px 0px 25px;
   }
 
   /*---------------------------------------
@@ -416,7 +404,7 @@ font-family: var(--base-font-family);
 
  .solutionTlt1{
   color: #3b291f;
-  font-size: 40px;
+  font-size: 45px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 7px #3b291f;
   text-align: left;
   font-weight: bold;
@@ -425,7 +413,7 @@ font-family: var(--base-font-family);
  
  .solutionTlt2{
   color: #6d291f;
-  font-size: 40px;
+  font-size: 45px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 7px #3b291f;
   text-align: left;  
   font-weight: bold;
@@ -434,7 +422,7 @@ font-family: var(--base-font-family);
 
  .solutionTlt3{
   color: #517280;
-  font-size: 40px;
+  font-size: 45px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 10px #3b291f;
   text-align: right;  
   font-weight: bold;
@@ -443,7 +431,7 @@ font-family: var(--base-font-family);
 
  .solutionTlt4{
   color: #345572;
-  font-size: 40px;
+  font-size: 45px;
   text-shadow: 2px 2px 0px #ffffff, 5px 5px 10px #3b291f;
   text-align: right;  
   font-weight: bold;
@@ -462,6 +450,13 @@ font-family: var(--base-font-family);
   max-width: 300px ;
  }
 
+ .container8{
+  max-width: 400px;
+  position: relative;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%,5%);
+ }
 
  .solution-wrapper {
   position: relative;
@@ -487,7 +482,8 @@ font-family: var(--base-font-family);
   font-family: Plain-Bold ;
   font-size: large;
   padding-top: 6px;
-  font-family: var(--font-medium-family);
+  font-family: var(--base-font-family2);
+  padding-top: 12px;
 }
 
 .solution-wrapper2 {
@@ -530,14 +526,14 @@ font-family: var(--base-font-family);
     -webkit-text-fill-color: transparent;
     color: #ffffff;
     font-size:50px;
-    font-family: var(--font-medium-family);
+    font-family: var(--font-bold-family);
    }
 
    .lifelongTlt2{
     color: #ffffff;
     text-shadow: 0px 0px 4px #ffffff;
     font-size:50px;
-    font-family: var(--font-medium-family);
+    font-family: var(--font-bold-family);
    }
 
    .lifelongctx{
@@ -563,7 +559,11 @@ font-family: var(--base-font-family);
    .lifelong-info{
     text-align: center;
     margin-top: 30px;
-    font-family: var(--font-bold-family);
+   }
+
+   .circle2 p{
+    font-family: var(--base-font-family);
+    font-weight: bold;
    }
 
    .lifelong-info2{
@@ -577,12 +577,12 @@ font-family: var(--base-font-family);
 
    .Lifelongclr1{
     color: white;
-    font-style: italic;
+    font-weight: lighter;
+    font-family: var(--font-bold-family);
    }
 
    .Lifelongclr2{
     color: #F5C0A7;
-    font-style: italic;
    }
 
   /*---------------------------------------
@@ -602,10 +602,8 @@ font-family: var(--base-font-family);
    }
 
    .overseaTlt1{
-    font-size: 55px;
+    font-size: 60px;
     text-align: center;
-    font-weight: bolder;
-    font-style: italic;
     padding-bottom: 0px;
     margin-bottom: 0;
     background-image: linear-gradient(50deg, #ad604b, #64372b,#ad604b, #64372b);
@@ -620,10 +618,8 @@ font-family: var(--base-font-family);
    }
 
    .overseaTlt2{
-    font-size: 55px;
+    font-size: 60px;
     text-align: center;
-    font-weight: bolder;
-    font-style: italic;
     padding-bottom: 0px;
     margin-bottom: 0;
     background-image: linear-gradient(50deg, #597980, #2d3d40,#597980, #2d3d40);
@@ -634,14 +630,17 @@ font-family: var(--base-font-family);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(0px 2px 2px #ffffff);
+    font-family: var(--font-bold-family);
    }
 
    .overseaTlt3{
     color: #284a5b;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 0px;
     margin-bottom: 0;
+    font-family: var(--base-font-family2);
+    font-style: italic;
    }
 
    .container7{
@@ -651,34 +650,33 @@ font-family: var(--base-font-family);
 
    .overseasicon{
     text-align: center;
-    top: 95px;
+    top: 70px;
     padding-bottom: 0px;
    }
 
    .overTlt2{
     color: #3C261B;
-    font-weight: bold;
-    font-size: large;
     text-align: left;
+    font-weight: bold;
     padding-top: 55px;
-    font-family: var(--font-bold-family);
+    font-family: var(--base-font-family2);
    }
 
    .overTlt3{
     color: #ffffff;
     font-weight: bold;
-    font-size: large;
     text-align: right;
-    padding-top: 55px;
-    font-family: var(--font-bold-family);
+    padding-top: 50px;
+    font-family: var(--base-font-family2);
    }
 
    .overTlt4{
     color: #ffffff;
+    position: relative;
     font-weight: bold;
     font-size: large;
     text-align: center;
-    font-family: var(--font-bold-family);
+    font-family: var(--base-font-family2);
    }
 
    .overseaiconSty1{
@@ -688,7 +686,8 @@ font-family: var(--base-font-family);
 
    .overseaiconSty2{
     position: absolute;
-    right: 25%;
+    right: 15%;
+    
    }
 
    .overSty1{
@@ -714,7 +713,7 @@ font-family: var(--base-font-family);
     position: absolute;
     
     left: 50%;
-    top: 10%;
+    top: 20%;
     transform: translate(-50%, 50%);
     text-align: center;
    }
@@ -741,14 +740,14 @@ font-family: var(--base-font-family);
     font-size: 30px;
     text-align: center;
     font-weight: bolder;
-    background-image: linear-gradient(45deg, #ffffff, #acafb0,#ffffff, #acafb0);
+    background-image: linear-gradient(45deg,#ffffff, #ffffff, #5e5f5f,#ffffff, #5e5f5f,#ffffff, #ffffff);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(0px 2px 4px #000000);
+    filter: drop-shadow(2px 2px 2px #000000);
   }
 
   .supportingTlt2{
@@ -762,7 +761,7 @@ font-family: var(--base-font-family);
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    filter: drop-shadow(0px 2px 5px #000000);
+    filter: drop-shadow(4px 4px 3px #000000);
   }
   
   .imgSpt{
@@ -778,25 +777,28 @@ font-family: var(--base-font-family);
   }
 
   .support-info1{
-    border: 1px solid #958176;
+    /* border: 2px solid #958176; */
     text-align: center;
-    border-radius: 4px;
+    
     background-color: #b0bbc69c;
     width: fit-content;
     padding: 10px;
     color: #80604b;
     font-size: 18px;
     min-width: 250px;
-    font-weight: bold;
     text-shadow: 1px 1px 5px white;
     margin-top: 0px;
+    font-family: var(--base-font-family2);
+    clip-path: polygon(11% 0, 88% 0, 97% 20%, 97% 80%, 88% 100%, 12% 100%, 3% 80%, 3% 23%);
   }
 
   .support-info2{
     color: white;
     text-shadow: black;
     text-align: center;
+    font-size: medium;
     background-color: #b0bbc69c;
+    font-size: 13px;
     width: fit-content;
     min-width: 400px;
     text-shadow: 4px 4px 5px #000000;
@@ -835,7 +837,7 @@ font-family: var(--base-font-family);
     font-size: 13px;
     padding-top: 10px;
     margin-bottom: 20px;
-    font-family: var(--font-bold-family);
+    font-family: var(--font-medium-family);
   }
 
   /*---------------------------------------
@@ -912,7 +914,7 @@ font-family: var(--base-font-family);
   .ctxTkn{
     color: #597980;
     text-align: center;
-    font-family: var(--font-medium-family);
+    font-family: var(--font-bold-family);
     font-size: 19px;
   }
 
@@ -920,16 +922,16 @@ font-family: var(--base-font-family);
     color: #3B291F;
     text-align: center;
     font-size: 16px;
-    font-weight: bold;
     padding-top: 20px;
     padding-bottom: 110px;
+    font-family: var(--base-font-family2);
   }
 
   .tokenTlt2{
     text-align: center;
     position: relative;
     padding-top: 45px;
-    font-family: var(--font-medium-family);
+    font-family: var(--base-font-family2);
   }
 
   .tknTlt4{
@@ -959,7 +961,6 @@ font-family: var(--base-font-family);
     font-size: small;
     padding-top: 10px;
     padding-bottom: 20px;
-    font-family: var(--font-bold-family);
   }
 
   /*---------------------------------------
@@ -976,7 +977,7 @@ font-family: var(--base-font-family);
   .equityTlt{
     text-align: center;
     padding-top: 20px;
-    font-family: var(--font-medium-family);
+    font-family: var(--font-bold-family);
   }
 
   .equityTlt1{
@@ -1035,6 +1036,7 @@ font-family: var(--base-font-family);
     text-align: center;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    font-family: var(--font-bold-family);
   }
 
   .equity-info2{
@@ -1050,7 +1052,7 @@ font-family: var(--base-font-family);
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0;
-    font-family: var(--font-bold-family);
+    font-family: var(--font-medium-family);
   }
 
   .etyclr2{
@@ -1130,6 +1132,7 @@ font-family: var(--base-font-family);
     text-shadow: 0px 0px 7px white;
     font-weight: bold;
     padding-top: 15px;
+    font-family: var(--font-bold-family);
   }
 
   .rvSty1{
@@ -1138,6 +1141,7 @@ font-family: var(--base-font-family);
     color: #314355;
     text-shadow: 0px 0px 7px white;
     font-weight: bold;
+    font-family: var(--font-bold-family);
   }
 
   .rvSty2{
@@ -1178,8 +1182,9 @@ font-family: var(--base-font-family);
 
   .rvSty5{
     color: #671a0d;
-    font-size: x-large;
+    font-size: 30px;
     text-shadow: 0px 0px 7px white;
+    font-family: var(--font-bold-family);
   }
 
   .rvSty6{
@@ -1220,14 +1225,14 @@ font-family: var(--base-font-family);
     color: #b4804f;
     text-shadow: 2px 2px 0px #ffffff;
     font-size: 30px;
-    font-family: var(--font-bold-family);
+    font-family: var(--font-medium-family);
   }
 
   .excTlt2{
     color: #000000;
     text-shadow: 2px 2px 0px #ffffff;
     font-size: 55px;
-    font-family: var(--font-medium-family);
+    font-family: var(--font-bold-family);
   }
 
   .excTlt3{
@@ -1259,7 +1264,7 @@ font-family: var(--base-font-family);
   .countries{
     font-size: x-large;
     color: #37241B;
-    font-family: var(--font-bold-family);
+    font-family: var(--font-medium-family);
   }
 
   ul.ctyList{
@@ -1314,10 +1319,6 @@ font-family: var(--base-font-family);
 
   @media screen and (min-width: 1200px) {
 
-    .about-info h2 {
-      max-width: 70%;
-    }
-
     .card-body{
       font-size: 85%;
     }
@@ -1344,6 +1345,9 @@ font-family: var(--base-font-family);
 
   @media screen and (max-width: 991px) {
 
+    .about-info{
+      font-size: 14px;
+    }
 
     .card-body{
       margin-left: 10%;
@@ -1401,7 +1405,11 @@ font-family: var(--base-font-family);
     }
 
     .slogan{
-      font-size: 8px;
+      font-size: 18px;
+    }
+
+    .about-info{
+      font-size: 11px;
     }
 
     .teamTlt2{
@@ -1434,6 +1442,7 @@ font-family: var(--base-font-family);
     .solutionTlt4{
       font-size: 35px;
      }
+
 
     .lineS1{
       margin-top: 30px;
@@ -1469,14 +1478,13 @@ font-family: var(--base-font-family);
 
 
     .support-info1{
-      border: 1px solid #958176;
       text-align: center;
       border-radius: 4px;
       background-color: #b0bbc69c;
       width: fit-content;
       padding: 10px;
       color: #80604b;
-      font-size: 12px;
+      font-size: 15px;
       width: 250px;
       text-shadow: 1px 1px 5px white;
     }
@@ -1501,7 +1509,11 @@ font-family: var(--base-font-family);
     .card-body{
       margin-left: 10%;
       margin-right: 10%;
-      font-size: 80%;
+   
+    }
+
+    .card-bodySpt{
+      font-size: 11px;
     }
 
     .ll7{
