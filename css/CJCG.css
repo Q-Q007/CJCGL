@@ -1244,12 +1244,16 @@ font-family: var(--base-font-family);
   .exchange-info{
     text-align: right;
     background-color: #597980;
+    font-size: 22px;
     color: #ffffff;
     width: max-content;
-    padding: 10px;
+    padding: 5px;
+    padding-left:15px ;
+    padding-right:15px ;
     margin-right: 0;
     margin-bottom: 10px;
     font-family: var(--font-bold-family);
+    letter-spacing: 3px;
   }
 
   .lineSty{
@@ -1541,8 +1545,9 @@ font-family: var(--base-font-family);
     .imgMap{
       text-align: right;
       margin-left: 20px;
-      width: 200px;
-      height: 140px;
+      width: 150px;
+      height: 100px;
+      margin-top: 22px;
     }
 
     .footer-link, 
