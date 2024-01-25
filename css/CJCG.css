@@ -771,15 +771,14 @@ font-family: var(--base-font-family);
   }
 
   .support-info{
-    text-align: center center;
+    text-align: center;
+    border-width: min-content;
   }
 
   .support-info1{
     /* border: 2px solid #958176; */
     text-align: center;
-    
     background-color: #b0bbc69c;
-    width: fit-content;
     padding: 10px;
     color: #80604b;
     font-size: 18px;
@@ -928,7 +927,7 @@ font-family: var(--base-font-family);
   .tokenTlt2{
     text-align: center;
     position: relative;
-    padding-top: 45px;
+    padding-top: 35px;
     font-family: var(--base-font-family2);
   }
 
@@ -1024,9 +1023,9 @@ font-family: var(--base-font-family);
     color: #FFDCB3;
   }
 
-  .imgline{
+  /* .imgline{
     text-align: center;
-  }
+  } */
 
   .Success{
     color: #EBCD80;
@@ -1253,16 +1252,29 @@ font-family: var(--base-font-family);
     font-family: var(--font-bold-family);
   }
 
+  .lineSty{
+    text-align: left;
+  }
+
   .imgMap{
     width: 180px;
     height: 110px;
     text-align: right;
   }
 
-  .countries{
+  .countries {
     font-size: x-large;
     color: #37241B;
     font-family: var(--font-medium-family);
+  }
+
+  .ctyList hr{
+    width: 130px;
+    text-align: left;
+  }
+
+  .ctyList{
+    text-align: left;
   }
 
   ul.ctyList{
@@ -1278,13 +1290,12 @@ font-family: var(--base-font-family);
   }
 
   .container4{
-    width: 440px;
+    width: 410px;
     position: absolute;
     top:auto;
     left: 50%;
     transform:translate(-50%, -50%) ;
     margin-top: 250px;
-    
   }
 
   /*---------------------------------------
@@ -1468,6 +1479,10 @@ font-family: var(--base-font-family);
       background-position: center center;
     }
 
+    .line{
+      max-width: 400px;
+    }
+
     .imgSpt{
       width:100px;
       height: 100px;
@@ -1477,13 +1492,10 @@ font-family: var(--base-font-family);
 
     .support-info1{
       text-align: center;
-      border-radius: 4px;
+  
       background-color: #b0bbc69c;
-      width: fit-content;
-      padding: 10px;
-      color: #80604b;
       font-size: 15px;
-      width: 250px;
+      max-width: 250px;
       text-shadow: 1px 1px 5px white;
     }
 
@@ -1524,6 +1536,7 @@ font-family: var(--base-font-family);
       width: 450px;
       height: 200px;
     }
+
 
     .imgMap{
       text-align: right;
