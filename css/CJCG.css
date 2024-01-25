@@ -1261,9 +1261,10 @@ font-family: var(--base-font-family);
   }
 
   .imgMap{
-    width: 180px;
+    width: 150px;
     height: 110px;
     text-align: right;
+    margin-top: 20px;
   }
 
   .countries {
