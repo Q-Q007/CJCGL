@@ -326,6 +326,7 @@ font-family: var(--base-font-family);
     background-repeat: no-repeat;
     padding-top: 30px;
     font-family: var(--base-font-family2);
+    margin: 0px;
   }
 
   .missionlogo{
@@ -339,6 +340,17 @@ font-family: var(--base-font-family);
     font-weight: bold;
     text-shadow: 1px 1px 10px white;
     font-size: 16px;
+  }
+
+  .ct2{
+    position: absolute;
+    color: #3B291F;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px white;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 5px;
   }
 
   .container5{
@@ -1437,7 +1449,55 @@ font-family: var(--base-font-family);
     .ct{
       text-align: center;
       font-size: 13px;
-      padding: 10px;
+      padding-top: 14px;
+    }
+
+    .ct2{
+      text-align: center;
+      font-size: 13px;
+      padding-top: 14px;
+      padding-left: 10px;
+    }
+
+    .container5{
+      width: 350px;
+      position: absolute;
+      top:auto;
+      left: 50%;
+      transform:translate(-50%, -50%) ;
+      margin-top: 300px;
+      padding-top:10px ;
+    }
+
+    .mission-info2{
+      text-align: left;
+      font-size: small;
+      background-color: #3b291fcb;
+      clip-path: polygon(0 0, 98% 0, 90% 100%, 0% 100%);
+      height: 90px;
+    }
+  
+    .txtMission{
+      font-size: 9px;
+    }
+  
+    #i1{
+      float: right;    
+      margin: -15px 0px 0px 0px;
+    }
+  
+    .mission-info3{
+      text-align: right;
+      font-size: small;
+      background-color: #517280b6;
+      margin-top: 15px;
+      clip-path: polygon(10% 0, 97% 0, 97% 100%, 0 100%);
+      height: 90px;
+    }
+  
+    #i2{
+      float: left;    
+      margin: -10px 0px 0px 25px;
     }
 
     .solutionTlt1{
