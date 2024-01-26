@@ -147,7 +147,7 @@ font-family: var(--base-font-family);
   }
 
   .about-info{
-    font-size: 15px;
+    font-size: 13px;
     color: #517280;
     width: fix-content;
     padding-top: 20px;
@@ -261,8 +261,7 @@ font-family: var(--base-font-family);
     background: #C5B7B2;
     margin-top: 20px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;   
   }
 
   .teamMember{
@@ -1360,7 +1359,7 @@ font-family: var(--base-font-family);
   @media screen and (max-width: 991px) {
 
     .about-info{
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .card-body{
@@ -1423,16 +1422,18 @@ font-family: var(--base-font-family);
     }
 
     .about-info{
-      font-size: 11px;
+      font-size: 10px;
     }
 
     .teamTlt2{
       font-size: 52px;
     }
 
-    .teamMember{
-      padding-top: 200px;
+    .circle{
+      width: 90px;
+      height: 90px;
     }
+    
 
     .MissionTlt1{
       font-size: 60px;
