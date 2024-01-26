@@ -1496,10 +1496,14 @@ font-family: var(--base-font-family);
       font-size: 10px;
      }
 
-     .ll7{
-      width:130px;
-      height: 130px;
+    .ll7{
+      width:100px;
+      height: 100px;
       padding: 0px;
+    }
+
+    .container7{
+      width: 380px;
     }
 
     .overseasTlt{
