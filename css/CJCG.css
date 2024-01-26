@@ -1442,10 +1442,10 @@ font-family: var(--base-font-family);
       font-size: 80px;
     }
 
-    .mission-info p{
-      font-size: 15px;
+    .ct{
       text-align: center;
-      padding: 10px;
+      font-size: 15px;
+      padding: 5px;
     }
 
     .solutionTlt1{
