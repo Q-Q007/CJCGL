@@ -41,7 +41,6 @@ background: var(--white-color);
 font-family: var(--base-font-family);
 }
 
-
   
   /*---------------------------------------
      First Page            
@@ -1611,6 +1610,11 @@ font-family: var(--base-font-family);
       font-size: 11px;
     }
 
+    .card-bodyTkn{
+      font-size: 11px;
+    }
+  
+
     .imgTkn{
       width: 450px;
       height: 200px;
@@ -1638,3 +1642,5 @@ font-family: var(--base-font-family);
       margin-left: 0;
     }
   }
+
+
