@@ -1443,7 +1443,11 @@ font-family: var(--base-font-family);
       font-size: 80px;
     }
 
-
+    .mission-info p{
+      font-size: 15px;
+      text-align: center;
+      padding: 10px;
+    }
 
     .solutionTlt1{
       font-size: 35px;
@@ -1480,6 +1484,16 @@ font-family: var(--base-font-family);
      .lifelongTlt2{
       font-size:40px;
      }
+
+     .lifelong-info p{
+      font-size: 5px;
+     }
+
+     .ll7{
+      width:160px;
+      height: 160px;
+      padding: 0px;
+    }
 
     .overseasTlt{
       width: auto;
@@ -1532,12 +1546,6 @@ font-family: var(--base-font-family);
 
     .card-bodySpt{
       font-size: 11px;
-    }
-
-    .ll7{
-      width:165px;
-      height: 160px;
-      padding: 0px;
     }
 
     .imgTkn{
