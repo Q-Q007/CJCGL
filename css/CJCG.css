@@ -796,7 +796,6 @@ font-family: var(--base-font-family);
     background-color: #b0bbc69c;
     font-size: 13px;
     width: fit-content;
-    min-width: 400px;
     text-shadow: 4px 4px 5px #000000;
     padding-left: 10px;
     padding-right: 10px;
@@ -1533,7 +1532,8 @@ font-family: var(--base-font-family);
     }
 
     .support-info2{
-      font-size: small;
+      font-size: 9px;
+      width: 300px;
     }
     
     .support-info3{
