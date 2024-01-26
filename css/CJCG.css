@@ -46,54 +46,53 @@ font-family: var(--base-font-family);
      First Page            
   -----------------------------------------*/
 
-.first {
+  video {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;    
+    z-index: -1;
+  }
+
+  .video-wrapper1 {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* .first {
     min-height: 100vh;
     background-image: url("../images/bg.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    
+  } */
+
+  .center{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
-  
-.first-logo{
+
+  .slogan{
     position: relative;
-  
-}
-
-.center{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.hero-text {
-  bottom: 2em;
-  line-height: 800px;
-  text-align: center;
-
+    margin-top: 600px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px #000000;
+    font-family: var(--base-font-family2);
   }
-
-.hero-text p{
-  line-height: 100px;
-  text-align:center;
-  color: white;
-  text-shadow: 2cm;
-  line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.slogan{
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  letter-spacing: 10px;
-  text-shadow: 2px 2px 5px #000000;
-  font-family: var(--base-font-family2);
-}
 
     /*---------------------------------------
      About              
@@ -509,31 +508,35 @@ font-family: var(--base-font-family);
   /*---------------------------------------
      LIFELONG              
   -----------------------------------------*/
+
   .lifelong{
     min-height: 100vh;
-    background-image: url("../images/bglifelong.png");
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    /* background-image: url("../images/bglifelong.png");
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
    }
 
    .lifelongTlt{
     text-align: center;
-    padding: 25px;
+    padding: 20px;
    }
 
    .lifelongTlt1{
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
     color: #ffffff;
-    font-size:50px;
+    font-size:40px;
     font-family: var(--font-bold-family);
    }
 
    .lifelongTlt2{
     color: #ffffff;
     text-shadow: 0px 0px 4px #ffffff;
-    font-size:50px;
+    font-size:40px;
     font-family: var(--font-bold-family);
    }
 
@@ -724,10 +727,13 @@ font-family: var(--base-font-family);
   -----------------------------------------*/
   .supporting{
     min-height: 100vh;
-    background-image: url("../images/bgsupporting.png");
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    /* background-image: url("../images/bgsupporting.png");
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   .supportingTlt{
@@ -740,7 +746,6 @@ font-family: var(--base-font-family);
   .supportingTlt1{
     font-size: 30px;
     text-align: center;
-    font-weight: bolder;
     background-image: linear-gradient(45deg,#ffffff, #ffffff, #5e5f5f,#ffffff, #5e5f5f,#ffffff, #ffffff);
     background-size: 100%;
     background-repeat: repeat;
@@ -754,7 +759,6 @@ font-family: var(--base-font-family);
   .supportingTlt2{
     font-size: 65px;
     text-align: center;
-    font-weight: bolder;
     background-image: linear-gradient(45deg, #ffffff, #acafb0,#ffffff, #acafb0);
     background-size: 100%;
     background-repeat: repeat;
@@ -1062,10 +1066,13 @@ font-family: var(--base-font-family);
   -----------------------------------------*/
   .revolution{
     min-height: 100vh;
-    background-image: url("../images/bgrevolution.png");
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    /* background-image: url("../images/bgrevolution.png");
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 
   .revolutionTlt{
@@ -1103,7 +1110,7 @@ font-family: var(--base-font-family);
 
   .container2{
     position: absolute;
-    top:auto;
+    top: 33%;
     left: 50%;
     transform:translate(-50%, -50%) ;
     margin-top: 110px;
@@ -1170,7 +1177,7 @@ font-family: var(--base-font-family);
     text-align: center;
     font-weight: bold;
     position: absolute;
-    top:auto;
+    top: 35%;
     left: 50%;
     transform:translate(-50%, -50%) ;
     margin-top: 350px;
@@ -1403,7 +1410,6 @@ font-family: var(--base-font-family);
   }
 
   @media screen and (max-width: 767px) {
-
  
     h1 {
       font-size: 36px;
@@ -1638,6 +1644,20 @@ font-family: var(--base-font-family);
 
     .footer-link li {
       margin-left: 0;
+    }
+  }
+
+  @media (min-aspect-ratio:16/9){
+    #videobg1{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-aspect-ratio:16/9){
+    #videobg1{
+      width: auto;
+      height: 100%;
     }
   }
 
