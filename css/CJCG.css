@@ -325,7 +325,7 @@ font-family: var(--base-font-family);
     background-position: center center;
     background-repeat: no-repeat;
     padding-top: 10px;
-    font-size: small;
+    font-size: x-small;
     font-family: var(--base-font-family2);
   }
 
@@ -376,7 +376,7 @@ font-family: var(--base-font-family);
     font-size: small;
     background-color: #517280b6;
     margin-top: 15px;
-    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(10% 0, 97% 0, 97% 100%, 0 100%);
     height: 120px;
   }
 
@@ -1441,6 +1441,10 @@ font-family: var(--base-font-family);
 
     .MissionTlt2{
       font-size: 80px;
+    }
+
+    .mission-info{
+      font-size: 8px;
     }
 
     .solutionTlt1{
