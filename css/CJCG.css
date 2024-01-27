@@ -1352,13 +1352,9 @@ font-family: var(--base-font-family);
 
   @media screen and (min-width: 991px) {
 
-  .card-body{
-    font-size: 82%;
-  }
-
-    .project h2 {
-      max-width: 32%;
-      margin: 0 auto;
+    .container{
+      width: 600px;
+      padding-bottom: 20px;
     }
 
   }
@@ -1369,19 +1365,11 @@ font-family: var(--base-font-family);
       font-size: 13px;
     }
 
-    .card-body{
-      margin-left: 10%;
-      margin-right: 10%;
-      font-size: 80%;
+    .container{
+      width: 600px;
+      padding-bottom: 20px;
     }
 
-    .hero {
-      padding-top: 14em;
-    }
-
-    .hero-text {
-      bottom: 2em;
-    }
 
     .navbar {
       padding: 1em;
@@ -1410,17 +1398,10 @@ font-family: var(--base-font-family);
   }
 
   @media screen and (max-width: 767px) {
- 
-    h1 {
-      font-size: 36px;
-    }
 
-    h2 {
-      font-size: 28px;
-    }
-
-    h3 {
-      font-size: 22px;
+    .container{
+      width: 400px;
+      padding-bottom: 20px;
     }
 
     .slogan{
@@ -1439,7 +1420,6 @@ font-family: var(--base-font-family);
       width: 90px;
       height: 90px;
     }
-    
 
     .MissionTlt1{
       font-size: 60px;
@@ -1647,18 +1627,5 @@ font-family: var(--base-font-family);
     }
   }
 
-  @media (min-aspect-ratio:16/9){
-    #videobg1{
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  @media (max-aspect-ratio:16/9){
-    #videobg1{
-      width: auto;
-      height: 100%;
-    }
-  }
 
 
