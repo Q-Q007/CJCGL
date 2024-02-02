@@ -24,6 +24,8 @@
   src: url(../fonts/sucaijishikufangti\ Regular.ttf)format(truetype);
 }
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 :root {
 
 --base-font-family:     'crimson', sans-serif;
@@ -41,6 +43,22 @@ background: var(--white-color);
 font-family: var(--base-font-family);
 }
 
+  /*---------------------------------------
+     Button            
+  -----------------------------------------*/
+
+  .btn {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn:hover {
+    color: #ebcd80;
+  }
   
   /*---------------------------------------
      First Page            
@@ -1398,6 +1416,10 @@ font-family: var(--base-font-family);
   }
 
   @media screen and (max-width: 767px) {
+
+    .btn {
+      color: white;
+    }
 
     .container{
       width: 400px;
