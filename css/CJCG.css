@@ -1371,6 +1371,10 @@ font-family: var(--base-font-family);
     font-family: var(--title-font-family);
   }
 
+  .language{
+    padding-left: 0;
+  }
+
   .footer-language{
     list-style: none;
   }
@@ -1407,6 +1411,10 @@ font-family: var(--base-font-family);
     background-color: #363633;
     padding: 30px;
     padding-right: 10px;
+  }
+
+  .copyright{
+    padding-right: 20px;
   }
 
   .footerSty{
