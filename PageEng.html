@@ -14,6 +14,8 @@
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/CJCG2.css">
@@ -31,9 +33,16 @@
               <source src="images/videobg1.mp4" type="video/mp4">
             </video>
 
-            <a href="index.html">
-                <button class="btn"><i class="bi bi-globe"></i></button>
-            </a>
+            <button class="btn"><i class="bi bi-globe"></i></button>
+            <div class="dropdown">
+              <button class="btn">
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="index.html">中文</a>
+                <a href="PageEng.html">English</a>
+              </div>
+            </div>
 
             <div class="first-logo">
                 <div data-aos="fade-up" data-aos-delay="100">
@@ -956,30 +965,32 @@
   </section>
 
   <!--footer-->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col footerSty">
-            中国联合资本
-          </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col language">
+          <h6 class="footerLSty">Language</h6>
+          <ul class="footer-language">
+            <li><a href="index.html">中文</a></li>
+            <li><a href="PageEng.html">English</a></li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col footerSty2">
-            CHINA JOINT CAPITAL GROUP LIMITED
-          </div>
-        </div>
-        <div class="row">
-          <div class="col footerSty2">
-            <img src="images/socialmedia.png">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col footerSty2">
-            @2024 CHINA JOINT CAPITAL GROUP LIMITED- All Rights Reserved
-          </div>
+
+        <div class="col">
+          <h6 class="footerSty">中国联合资本</h6>
+          <h6 class="footerSty2"> CHINA JOINT CAPITAL GROUP LIMITED</h6>
+          <ul class="footer-social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-discord" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+          <h1 class="col footerSty2">@2024 CHINA JOINT CAPITAL GROUP LIMITED- All Rights Reserved</h7>
         </div>
       </div>
-    </footer>
+      
+    </div>
+  </footer>
 
 
      <!-- SCRIPTS -->
