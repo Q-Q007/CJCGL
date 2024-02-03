@@ -1406,6 +1406,7 @@ font-family: var(--base-font-family);
   .site-footer{
     background-color: #363633;
     padding: 30px;
+    padding-right: 10px;
   }
 
   .footerSty{
