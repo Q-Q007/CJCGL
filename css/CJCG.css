@@ -54,7 +54,6 @@ font-family: var(--base-font-family);
     top: 5%;
     right: 2%;
     transform: translate(-50%, -50%);
-    
   }
 
   .btn:hover {
@@ -75,6 +74,7 @@ font-family: var(--base-font-family);
     background-color: #f1f1f1;
     min-width: 100px;
     z-index: 1;
+    margin-top: 15px;
   }
   
   .dropdown-content a {
@@ -84,7 +84,9 @@ font-family: var(--base-font-family);
     display: block;
   }
 
-  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content a:hover {
+    background-color: #ddd
+  }
 
   .dropdown:hover .dropdown-content {
     display: block;
